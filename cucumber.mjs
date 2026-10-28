@@ -1,7 +1,7 @@
 export default {
   paths: ['src/features/**/*.feature'],
-  requireModule: ['ts-node/register'],
-  require: ['src/steps/**/*.ts', 'src/support/**/*.ts'],
+  loader: ['ts-node/esm'],
+  import: ['src/steps/**/*.ts', 'src/support/**/*.ts'],
   format: ['progress'],
   strict: true,
 };
